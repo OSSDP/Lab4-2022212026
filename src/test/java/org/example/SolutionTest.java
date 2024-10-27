@@ -64,6 +64,6 @@ public class SolutionTest {
         // 使用的测试用例：空字符串
         String s = "";
         List<String> expected = Arrays.asList();
-        assertEquals( new HashSet<>(solution.findRepeatedDnaSequences(s)))
+        assertEquals( new HashSet<>(expected),new HashSet<>(solution.findRepeatedDnaSequences(s)))
     }
 }
