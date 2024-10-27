@@ -18,7 +18,7 @@ public class SolutionTest {
     @Test
     void testFindRepeatedDnaSequences_WithRepetitions() {
         // 测试目的：验证当输入字符串中有重复的长度为10的DNA序列时，是否能正确找出所有重复的序列。
-        // 使用的测试用例：包含多个重复子串的DNA序列
+        
         String s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
         List<String> expected = Arrays.asList("AAAAACCCCC", "CCCCCAAAAA");
         assertEquals(new HashSet<>(expected), new HashSet<>(solution.findRepeatedDnaSequences(s)));
