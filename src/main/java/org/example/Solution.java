@@ -37,7 +37,6 @@ class Solution {
             return ans;
         }
         int x = 0;
-        // 计算初始哈希值
         for (int i = 0; i < L - 1; ++i) {
             x = (x << 2) | bin.get(s.charAt(i));
         }
