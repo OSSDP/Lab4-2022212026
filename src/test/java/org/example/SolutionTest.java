@@ -1,13 +1,15 @@
 package org.example;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+//import static org.junit.jupiter.api.Assertions.*;
+
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class SolutionTest {
 
@@ -64,6 +66,6 @@ public class SolutionTest {
         // 使用的测试用例：空字符串
         String s = "";
         List<String> expected = Arrays.asList();
-        assertEquals( new HashSet<>(expected),new HashSet<>(solution.findRepeatedDnaSequences(s)))
+        assertEquals(new HashSet<>(expected), new HashSet<>(solution.findRepeatedDnaSequences(s)));
     }
 }
